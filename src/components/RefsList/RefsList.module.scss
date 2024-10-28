@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    gap: 30px 30px;
+    justify-self: flex-end;
+
+    li:not(:last-child)::after {
+        // content: ;
+    }
+
+    li {
+        display: inline;
+        
+        .link {
+            color: #3F4E65;
+            text-decoration: none;
+            margin: 0;
+        }
+    }
+    
+
+}

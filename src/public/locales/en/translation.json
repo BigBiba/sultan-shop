@@ -1,0 +1,14 @@
+{
+    "main": {
+        "header": {
+            "address": { "main": "Kokchetav, 129B Zh. Tashenov street", "sub": "(Vostochny Market)" },
+            "mail": { "sub": "Be in touch at any time" },
+            "menu": {"about": "About us", "delivery": "Delivery and payment", "refund": "Refund", "contacts": "Contacts"},
+            "catalog": "Catalog",
+            "search": "Search",
+            "phone": {"time": "Working hours", "request": "Order a call"},
+            "price": "Price list",
+            "basket": "Basket"
+        }
+    }
+}

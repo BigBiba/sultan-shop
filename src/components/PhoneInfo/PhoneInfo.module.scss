@@ -1,0 +1,29 @@
+.info {
+    display: flex;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        * {
+            margin: 5px;
+        }
+
+        .phone {
+            font-style: bold;
+            size: 14 px;
+            color: black;
+        }
+
+        .time {
+            size: 12px;
+            color: #3F4E65;
+        }
+
+        .link {
+            size: 10px;
+            color: #3F4E65;
+        } 
+    }
+}

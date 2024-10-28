@@ -1,0 +1,28 @@
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    border-radius: 36px;
+    width: 300px;
+  
+    input {
+      border: none;
+      background: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+      color: #666666;
+    }
+  
+    button {
+      background-color: #f4c363;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+}
