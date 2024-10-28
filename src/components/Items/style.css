@@ -1,0 +1,16 @@
+.item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .item img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .item-container {
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
