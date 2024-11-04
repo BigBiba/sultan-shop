@@ -1,5 +1,5 @@
 import { items } from './data.js';
-import { getImageUrl } from './utils.js';
+import Image from 'next/image'; // Импорт компонент Image из next/image
 import './style.css';
 
 export default function PromItems() {
@@ -9,13 +9,69 @@ export default function PromItems() {
       <div className="item-container">
         {items.map(item => (
           <div className="item" key={item.id}>
-            <img
-              src={getImageUrl(item)}
+            <Image
+              src={item.imageId} // Используем путь из items
+              alt={item.name} // Используем название товара для alt
+              layout="responsive" // Устанавливаем адаптивный размер
+              width={100} // Ширина изображения
+              height={100} // Высота изображения
             />
-            <div style={{ display: 'block', marginTop: '5px' }}>
-              <span>{item.name}</span>
-              <span>{item.price}</span>
+            <div className="label">Популярное</div>
+            <div className = 'item-ml'>{item.ml} мл</div> {/* Добавляем надпись 450 мл */}
+            <div className="item-name">
+              <strong>{item.name.split(' ')[0]}</strong> {/* Первое слово жирным */}
+              {item.name.split(' ').slice(1).join(' ')} {/* Остальные слова */}
             </div>
+
+            <div className="spacer"></div>
+            <div className="item-details">
+              Штрихкод: <span className="item-barcode">{item.barcode}</span> {/* Штрихкод */}
+            </div>
+            <div className="item-details">
+              Производитель: <span className="item-manufacturer">{item.manufacturer}</span> {/* Производитель */}
+            </div> 
+            <div className="item-details">
+            Бренд: <span className="item-brand">{item.brand}</span> {/* Бренд */}
+            </div>
+
+            <div className="spacer"></div>
+            <div className='item-price'>{item.price} ₸</div>
+            
+          </div>
+        ))}
+      </div>
+
+      <div className="item-container">
+        {items.map(item => (
+          <div className="item" key={item.id}>
+            <Image
+              src={item.imageId} // Используем путь из items
+              alt={item.name} // Используем название товара для alt
+              layout="responsive" // Устанавливаем адаптивный размер
+              width={100} // Ширина изображения
+              height={100} // Высота изображения
+            />
+            <div className="label">Популярное</div>
+            <div className = 'item-ml'>{item.ml} мл</div> {/* Добавляем надпись 450 мл */}
+            <div className="item-name">
+              <strong>{item.name.split(' ')[0]}</strong> {/* Первое слово жирным */}
+              {item.name.split(' ').slice(1).join(' ')} {/* Остальные слова */}
+            </div>
+
+            <div className="spacer"></div>
+            <div className="item-details">
+              Штрихкод: <span className="item-barcode">{item.barcode}</span> {/* Штрихкод */}
+            </div>
+            <div className="item-details">
+              Производитель: <span className="item-manufacturer">{item.manufacturer}</span> {/* Производитель */}
+            </div> 
+            <div className="item-details">
+            Бренд: <span className="item-brand">{item.brand}</span> {/* Бренд */}
+            </div>
+
+            <div className="spacer"></div>
+            <div className='item-price'>{item.price} ₸</div>
+            
           </div>
         ))}
       </div>
