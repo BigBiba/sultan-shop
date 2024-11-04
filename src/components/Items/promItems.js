@@ -5,7 +5,7 @@ import './style.css';
 export default function PromItems() {
   return (
     <div>
-      <h1 style={{ textAlign: 'left' }}>Акционные товары</h1>
+      <strong><h1 style={{ textAlign: 'left' }}><span style={{ color: '#FFBF00' }}>Акционные</span> товары</h1></strong>
       <div className="item-container">
         {items.map(item => (
           <div className="item" key={item.id}>
