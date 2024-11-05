@@ -11,7 +11,7 @@
         }
 
         .phone {
-            font-style: bold;
+            font-weight: bold;
             size: 14 px;
             color: black;
         }
@@ -25,5 +25,25 @@
             size: 10px;
             color: #3F4E65;
         } 
+    }
+
+    .image_operator {
+        position: relative;
+        width: 70px;
+        height: 92px;
+        border-radius: 50%;
+        overflow: hidden;
+        
+
+        .indicator {
+            position: absolute;
+            top: 29px;
+            right: 6px;
+            width: 8px;
+            height: 8px;
+            background-color: #1FD85D; // Зеленый цвет для индикатора
+            border-radius: 50%;
+            border: 2px solid #F0F6FA;
+        }
     }
 }

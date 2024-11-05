@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 export default function MailInfo() {
     return (
         <div className={styles.info}>
-           <Image src={MailLogo} alt="Mail"></Image>
+           <Image className={styles.logo} src={MailLogo} alt="Mail"></Image>
            <div className={styles.container}>
                 <Link className={styles.link} href="mailto:opt.sultan@mail.ru">opt.sultan@mail.ru</Link>
                 <p className={styles.text}>На связи в любое время</p>

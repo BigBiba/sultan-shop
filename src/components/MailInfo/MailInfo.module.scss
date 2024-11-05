@@ -2,9 +2,16 @@
     display: flex;
     align-items: center;
     width: fit-content;
+    font-size: 14px;
+
+    .logo {
+        margin-right: 15px;
+    }
+
     .container {
         .link {
             color: black;
+            font-weight: bold;
             text-decoration: none;
             margin: 0;
         }

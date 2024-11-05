@@ -7,8 +7,8 @@ import { useTranslation } from 'next-i18next';
 export default function AddressInfo() {
     return (
         <div className={styles.info}>
-           <Image src={PinLogo} alt="Pin"></Image>
-           <p>
+           <Image className={styles.logo} src={PinLogo} alt="Pin"></Image>
+            <p>
             <span>г. Кокчетав, ул. Ж. Ташенова 129Б</span>
             <br/>(Рынок Восточный)
             </p>

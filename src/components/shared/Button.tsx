@@ -5,12 +5,16 @@ interface ButtonInterface {
     text: string;
     icon_src: string;
     icon_alt: string;
+    width?: number;
+    height?: number;
 }
 
-export function Button({text, icon_src, icon_alt}: ButtonInterface) {
+
+
+export function Button({text, icon_src, icon_alt, width, height}: ButtonInterface) {
     return (
-        <button className={styles.button}>
-            <Image src={icon_src} alt={icon_alt}></Image>
+        <button className={styles.button} style={{width: width, height: height}}>
+            <Image className={styles.logo} src={icon_src} alt={icon_alt}></Image>
             {text}
         </button>
     )

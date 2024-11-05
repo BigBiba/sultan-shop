@@ -13,7 +13,10 @@ export default function PhoneInfo() {
                 <p className={styles.time}>время работы: 9:00-20:00</p>
                 <Link className={styles.link} href="tel:+7 (777) 490-00-91">Заказать звонок</Link>
            </div>
-           <Image src={WomanPNG} alt=""></Image>
+           <div className={styles.image_operator}>
+                <Image className={styles.image} src={WomanPNG} alt="" width={74} height={113}></Image>
+                <span className={styles.indicator}></span>
+           </div>
         </div>
     )
 }

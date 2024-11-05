@@ -16,16 +16,23 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.top}>
-                <AddressInfo></AddressInfo>
-                <MailInfo></MailInfo>
+                <div className={styles.info_container}>
+                    <AddressInfo></AddressInfo>
+                    <MailInfo></MailInfo>
+                </div>
                 <RefsList></RefsList>
             </div>
+            <hr></hr>
             <div className={styles.bottom}>
                 <MainLogo></MainLogo>
-                <Button text="Каталог" icon_src={CatalogLogo} icon_alt="Catalog"></Button>
+                <div className={styles.catalog_button}>
+                    <Button text="Каталог" icon_src={CatalogLogo} icon_alt="Catalog" width={192} height={59}></Button>
+                </div>
                 <Search></Search>
                 <PhoneInfo></PhoneInfo>
-                <Button text="Прайс-лист" icon_src={DownloadLogo} icon_alt="Price"></Button>
+                <span></span>
+                <Button text="Прайс-лист" icon_src={DownloadLogo} icon_alt="Price" width={200} height={59}></Button>
+                <span></span>
                 <Basket></Basket>
             </div>
         </header>

@@ -2,10 +2,16 @@
     background-color: #FFC85E;
     border-radius: 79px;
     padding: 10px 20px 10px 20px;
+    width: 100px;
+    height: 40px;
     color: white;
     display: flex;
     flex-direction: row-reverse;
     border: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    .logo {
+        margin-left: 12px;
+    }
 }
