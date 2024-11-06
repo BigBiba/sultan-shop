@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-content: center;
+
+    .cart_operator {
+        position: relative;
+        margin-right: 24px;
+        width: 46px; height: 46px;
+        align-content: center;
+    
+        .indicator {
+            position: absolute;
+            top: 2px;
+            left: 32px;
+            text-align: center;
+            align-content: center;
+            width: 22px; height: 22px;
+
+            background-color: #FFC85E;
+            border-radius: 50%;
+            border: 3px solid #FFFFFF;
+            color: white
+        }
+    }
+
+    .text_container {
+        align-content: center;
+
+        .basket {
+            size: 12px;
+            line-height: 18px;
+            color: #3F4E65;
+        }
+        .sum {
+            color: #111111;
+            font-weight: bold;
+            line-height: 21px;
+        }
+    }
+    
+}
