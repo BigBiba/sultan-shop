@@ -1,0 +1,29 @@
+.info {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-right: 20px;
+    font-size: 14px;
+
+    p {
+        color: #3F4E65;
+    }
+    span {
+        font-weight: bold;
+        color: black;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+}
+
+.info::after {
+    content: "";
+    border: 1px;
+    height: 39px;
+    border-style: dashed;
+    color: #3F4E65;
+    opacity: 10%;
+    margin-left: 20px;
+}

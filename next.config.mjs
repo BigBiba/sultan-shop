@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = import('./next-i18next.config.js')
+export default async () => {
+  const { i18n } = await import('./next-i18next.config.js');
 
-export default {
-  i18n,
-}
+  return {
+    i18n,
+    // Any other Next.js configuration options can go here
+  };
+};
+
