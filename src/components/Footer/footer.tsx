@@ -5,6 +5,8 @@ import visaLogo from './visa.png';
 import mastercardLogo from './mastercard.png'; 
 import whatsappLogo from './whatsapp.png'; 
 import telegramLogo from './telegram.png'; 
+import DownloadLogo from "@/public/icons/download.svg"
+import { Button } from '../shared/Button';
 
 export function Footer () {
     return (
@@ -45,7 +47,7 @@ export function Footer () {
             </div>
             <div className="footer-section">
                 <h3>Скачать прайс-лист:</h3>
-                <a href="#" className="download-link">Прайс-лист</a>
+                <Button text='Прайс-лист' icon_src={DownloadLogo} icon_alt='' width={214} height={59}></Button>
                 <p className="messenger-info">Связь в мессенджерах:</p>
                 {/* Уменьшили отступ между строкой и иконками до 2px */}
                 <div className="messenger-logos" style={{ marginTop: '2px', display: 'flex', gap: '10px' }}>
