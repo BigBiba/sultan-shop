@@ -1,6 +1,8 @@
 import { items } from './data.js';
 import Image from 'next/image'; // Импорт компонент Image из next/image
 import './style.css';
+import CartLogo from "@/public/icons/minicart.svg"
+import { Button } from '../shared/Button';
 
 export default function PromItems() {
   return (
@@ -36,7 +38,7 @@ export default function PromItems() {
 
             <div className="spacer"></div>
             <div className='item-price'>{item.price} ₸</div>
-            
+            <Button text='В КОРЗИНУ' text_size={10} icon_src={CartLogo} icon_alt='' width={153} height={45}></Button>
           </div>
         ))}
       </div>
@@ -71,7 +73,7 @@ export default function PromItems() {
 
             <div className="spacer"></div>
             <div className='item-price'>{item.price} ₸</div>
-            
+            <Button text='В КОРЗИНУ' text_size={10} icon_src={CartLogo} icon_alt='' width={153} height={45}></Button>
           </div>
         ))}
       </div>
