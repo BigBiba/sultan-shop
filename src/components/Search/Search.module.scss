@@ -7,7 +7,7 @@
     width: 263px;
     height: 59px;
     margin-right: 35px;
-    
+
     input {
       padding-left: 20px;
       border: none;
@@ -16,6 +16,10 @@
       flex: 1;
       font-size: 16px;
       color: #666666;
+
+      .input:placeholder-shown {
+        color: #5C6370;
+      }
     }
   
     button {
