@@ -1,0 +1,33 @@
+.slider-container-sec {
+    width: 1000px;
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+}
+
+.slide-content-sec {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-image-sec {
+    width: 100px; /* Установите нужный размер */
+    height: auto;
+    margin-right: 10px; /* Отступ между изображениями */
+}
+
+.mySwiper2 .swiper-pagination-bullet {
+    width: 10px;
+    height: 5px;
+    background: orange;
+    border-radius: 2px;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 5px;
+    background: orange;
+    border-radius: 3px;
+}
