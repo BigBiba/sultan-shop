@@ -1,0 +1,80 @@
+.item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; // Минимальная высота статьи
+  
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: green;
+      color: white;
+      padding: 5px;
+      font-size: 12px;
+      z-index: 1;
+      border-radius: 5px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    &-name {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  
+    &-barcode,
+    &-manufacturer,
+    &-brand {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 12px;
+      color: black;
+    }
+  
+    &-price {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 18px;
+      color: black;
+      font-family: 'sans-serif';
+    }
+  
+    &-details {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 12px;
+      color: gray;
+    }
+  
+    &-ml {
+      text-align: left;
+      color: gray;
+      font-size: 12px;
+    }
+  
+    footer {
+      margin-top: auto; // Прижимает футер вниз
+    }
+  }
+  
+  .spacer {
+    margin: 20px 0;
+  }
+  

@@ -1,16 +1,16 @@
 import { items } from './data.js';
 import Image from 'next/image'; // Импорт компонент Image из next/image
-import './style.css';
+import './style.scss';
 import CartLogo from "@/public/icons/minicart.svg"
 import { Button } from '../shared/Button';
 
 export default function PromItems() {
   return (
     <div>
-      <strong><h1 style={{ textAlign: 'left' }}><span style={{ color: '#FFBF00' }}>Акционные</span> товары</h1></strong>
+      <strong><h2 style={{ textAlign: 'left', fontSize: '30px' }}><span style={{ color: '#FFBF00' }}>Акционные</span> товары</h2></strong>
       <div className="item-container">
         {items.map(item => (
-          <div className="item" key={item.id}>
+          <article className="item" key={item.id}>
             <Image
               src={item.imageId} // Используем путь из items
               alt={item.name} // Используем название товара для alt
@@ -38,12 +38,12 @@ export default function PromItems() {
 
             <div className="spacer"></div>
             <div className='item-price'>{item.price} ₸</div>
+            <footer>
             <Button text='В КОРЗИНУ' text_size={10} icon_src={CartLogo} icon_alt='' width={153} height={45}></Button>
-          </div>
+            </footer>
+          </article>
         ))}
-      </div>
-
-      <div className="item-container">
+      
         {items.map(item => (
           <div className="item" key={item.id}>
             <Image

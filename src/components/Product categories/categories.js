@@ -1,11 +1,11 @@
 import { items } from './data.js';
 import Image from 'next/image'; // Импорт компонент Image из next/image
-import './styleC.css';
+import './styleC.scss';
 
 export default function Categories() {
   return (
     <div>
-      <strong><h1 style={{ textAlign: 'left' }}><span style={{ color: '#FFBF00' }}>Категории</span> товаров</h1></strong>
+      <strong><h2 style={{ textAlign: 'left', fontSize: '30px' }}><span style={{ color: '#FFBF00' }}>Категории</span> товаров</h2></strong>
       <div style={{ color: 'gray' }}>10000+ ходовых позиций по специальным ценам</div>
       <div className="itemC-container">
         {items.map(itemC => (
