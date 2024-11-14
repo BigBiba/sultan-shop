@@ -25,28 +25,29 @@
     }
   }
 
-  @media (max-width: 768px) { /* Для мобильных устройств */
-    .itemC {
-        max-width: 80%; /* Элемент занимает большую часть ширины экрана */
-        margin: 10px auto; /* Центрирование элемента */
-    }
-    
-    .itemC-container {
-        justify-content: center; /* Центрирование контейнеров */
-    }
+  /* Адаптивные медиа-запросы */
+@media (max-width: 768px) { /* Для планшетов и маленьких экранов */
+  .item {
+      max-width: 90%; /* Элементы занимают всю ширину контейнера */
+      margin: 10px auto; /* Центрирование элемента */
+  }
+  
+  .item-container {
+      justify-content: center; /* Центрирование контейнеров */
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1020px) { /* Для небольших планшетов */
-    .itemC {
-        max-width: 40%; /* Два элемента в ряд */
-        margin: 10px;
-    }
+@media (min-width: 769px) and (max-width: 1020px) { /* Для больших планшетов */
+  .item {
+      max-width: 45%; /* Два элемента в ряд */
+      margin: 10px;
+  }
 }
 
-@media (min-width: 1024px) { /* Для больших планшетов и десктопов */
-    .itemC {
-        max-width: 15%; /* Четыре элемента в ряд */
-        margin: 10px;
-    }
+@media (min-width: 1024px) { /* Для десктопов */
+  .item {
+      max-width: 20%; /* Три элемента в ряд */
+      margin: 10px;
+  }
 }
   
