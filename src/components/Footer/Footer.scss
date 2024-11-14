@@ -6,6 +6,10 @@
     background-color: #2C3E50; 
     color: #FFFFFF; 
     margin-top: 20px; 
+
+    @media (max-width: 950px) {
+        padding: 15px;
+    }
 }
 
 .footer-section {
@@ -14,6 +18,15 @@
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
+
+    @media (max-width: 950px) {
+        margin: 10px 0; 
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    @media (max-width: 666px) {
+        flex: 1 1 100%; 
+    }
 }
 
 .footer-section h3 {
@@ -26,19 +39,19 @@
 .footer-section ul {
     list-style-type: none; 
     padding: 0; 
-}
 
-.footer-section ul li {
-    margin: 10px 0; 
+    li {
+        margin: 10px 0; 
+    }
 }
 
 .footer-section a {
     color: #FFFFFF; 
     text-decoration: none; 
-}
 
-.footer-section a:hover {
-    text-decoration: underline; 
+    &:hover {
+        text-decoration: underline; 
+    }
 }
 
 .footer-section p {
@@ -60,10 +73,10 @@
     font-family: 'Arial', sans-serif; 
     font-size: 16px; 
     color: #333; 
-}
 
-.call-button:hover {
-    background-color: #E67E22; 
+    &:hover {
+        background-color: #E67E22; 
+    }
 }
 
 .payment-logos {
@@ -106,6 +119,10 @@
     display: flex; 
     flex-direction: column; 
     margin-top: 5px; 
+
+    p {
+        margin: 2px 0; 
+    }
 }
 
 .contact-email {
@@ -122,10 +139,6 @@
     line-height: 18px; 
 }
 
-.contact-info p {
-    margin: 2px 0; 
-}
-
 .call-request {
     font-family: 'Arial', sans-serif; 
     font-size: 14px; 
@@ -135,10 +148,10 @@
     margin: 10px 0; 
     cursor: pointer; 
     color: #FFFFFF; 
-}
 
-.call-request:hover {
-    text-decoration: underline; 
+    &:hover {
+        text-decoration: underline; 
+    }
 }
 
 .bold {
@@ -160,25 +173,4 @@
 .button {
     background-color: #F1C40F; 
     border-radius: 79px; 
-}
-
-@media (max-width: 950px) {
-    .footer {
-        padding: 15px;
-    }
-    .footer-section {
-        margin: 10px 0; 
-    }
-}
-
-@media (max-width: 950px) {
-    .footer-section {
-        flex: 1 1 calc(50% - 20px); 
-    }
-}
-
-@media (max-width: 666px) {
-    .footer-section {
-        flex: 1 1 100%; 
-    }
 }
