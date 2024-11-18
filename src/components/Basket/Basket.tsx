@@ -1,9 +1,8 @@
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@/lib/i18n"
 import BasketLogo from "@/public/icons/basket.svg"
 import styles from "./Basket.module.scss"
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+import * as m from "@/paraglide/messages.js"
 
 export default function Basket() {
     const cartTotal = 0;
@@ -15,7 +14,7 @@ export default function Basket() {
                 <span className={styles.indicator}>{cartCount}</span>
             </div>
            <div className={styles.text_container}>
-                <p className={styles.basket}>Корзина</p>
+                <p className={styles.basket}>{m.main_header_basket()}</p>
                 <p className={styles.sum}>{cartTotal} ₸</p>
            </div>
         </div>
