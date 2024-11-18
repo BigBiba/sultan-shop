@@ -6,7 +6,7 @@ import styles from "./page.module.scss";
 import PromItems from "@/components/Items/promItems";
 import Categories from "@/components/Product categories/categories";
 import { Footer } from "@/components/Footer/footer";
-// import Slider from "@/components/Slider/slider"
+import Slider from "@/components/Slider/slider"
 // import Sponsor from "@/components/Sponsor/sponsor"
  
 
@@ -14,12 +14,12 @@ import { Footer } from "@/components/Footer/footer";
 export default function Home({ params: { lang } }: { params: { lang: string } }) {
   return (
     <div className={styles.body}>
-      <Header></Header>
+      <Header lang={lang}></Header>
       <Banner></Banner>
       <PromItems />
       <Categories />
-      {/* <Slider />
-      <Sponsor /> */}
+      <Slider />
+      {/* <Sponsor /> */}
       <Contacts />
       <Footer />
     </div>

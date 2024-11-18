@@ -2,15 +2,15 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import {Navigation, Pagination, Mousewheel, Keyboard} from 'swiper/modules';
-Swiper = dynamic(() => import('swiper/react').then(mod => mod.Swiper), { ssr: false });
-SwiperSlide = dynamic(() => import('swiper/react').then(mod => mod.SwiperSlide), { ssr: false });
+// Swiper = dynamic(() => import('swiper/react').then(mod => mod.Swiper), { ssr: false });
+// SwiperSlide = dynamic(() => import('swiper/react').then(mod => mod.SwiperSlide), { ssr: false });
 
 import Image from 'next/image';
 import {sliderData} from './data.js'

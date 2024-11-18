@@ -12,12 +12,12 @@ import Basket from "../Basket/Basket";
 
 
 
-export default function Header() {
+export default function Header({lang}: { lang: string}) {
     return (
         <header className={styles.header}>
             <div className={styles.top}>
                 <div className={styles.info_container}>
-                    <AddressInfo></AddressInfo>
+                    <AddressInfo lang={lang}></AddressInfo>
                     <MailInfo></MailInfo>
                 </div>
                 <RefsList></RefsList>
