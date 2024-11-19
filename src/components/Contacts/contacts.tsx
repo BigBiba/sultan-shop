@@ -1,45 +1,72 @@
-import './style.css';
-import Image from 'next/image'; // Импорт компонент Image из next/image
-import image from './image.png'; // Импорт изображение из той же папки
+import './contacts.scss';
+import Image from 'next/image'; 
+import image from './image.png'; 
+import map from './map.png'; 
+import doc from './doc.png'; 
 
 export function Contacts() {
   return (
-    <div className="contact-section">
+    <div className="container">
       <div className="image-container">
         <Image
-          src={image} // Используем импортированное изображение
+          src={image} 
           alt="Изображение"
-          layout="responsive" // Устанавливаем адаптивный размер
-          width={800} // Ширина изображения
-          height={600} // Высота изображения
+          layout="responsive" 
+          width={800} 
+          height={600} 
+          className="mapImage"
         />
+      </div>
+      <div className="overlay">
+        <h2>Контакты</h2>
+        <h4>Оптовый поставщик «Султан»</h4>
+        <div className="contactInfo" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'stretch' }}>
+          <div className="iconText" style={{ flex: 1, marginRight: '24px', display: 'flex', alignItems: 'center' }}>
+            <Image
+              src={map} 
+              alt="Icon"
+              layout="fixed" 
+              width={20} 
+              height={20}
+              className="icon"
+            />
+            <div>
+              <h3>Адрес:</h3>
+              <p>
+                г. Кокшетау, ул. Ж. Ташенова 129Б
+                <br />
+                (Рынок Восточный)
+              </p>
+            </div>
+          </div>
+          <div className="sale" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <h3 style={{ marginBottom: '8px' }}>Отдел продаж:</h3>
+            <p style={{ fontWeight: 400, fontSize: '14px', lineHeight: '18.2px', color: 'var(--blue)' }}>
+              +7 (777) 490-00-91
+              <br />
+              opt.sultan@mail.ru
+            </p>
+          </div>
+        </div>
+        <div className="iconText" style={{ marginTop: '40px', display: 'flex', alignItems: 'center' }}>
+          <Image
+            src={doc} 
+            alt="Icon"
+            layout="fixed" 
+            width={20} 
+            height={20}
+            className="icon"
+          />
+          <div>
+            <h3>Данные налогоплательщика:</h3>
+            <p>
+              ИП Катран Д.С.
+              <br />
+              ИНН: 860113450858
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
-
-
-
- 
-// export function Contacts() {
-//   return (
-//     <div className="contact-section">
-//       <h2>Контакты</h2>
-//       <div className="contact-info">
-//         <h3>Оптовый поставщик «Султан» </h3>
-//         <p>Адрес: ул. Примерная, 1, г. Примерск, 11221</p>
-//         <p>Телефон: +7 (123) 456-78-90</p>
-//         <p>Email: example@example.sfedu.ru</p>
-//       </div>
-//       <div className="map-container">
-//         <iframe
-//           title="Яндекс.Карта"
-//           src="https://yandex.ru/map-widget/v1/-/CDhYM2~3" 
-//           width="100%"
-//           height="400"
-//           frameBorder="0"
-//         ></iframe>
-//       </div>
-//     </div>
-//   );
-// }
+};

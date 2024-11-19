@@ -1,4 +1,4 @@
-import './Footer.css'; 
+import './Footer.scss'; 
 import Image from 'next/image'; 
 import sultanLogo from './sultan.png';
 import visaLogo from './visa.png'; 
@@ -49,7 +49,6 @@ export function Footer () {
                 <h3>Скачать прайс-лист:</h3>
                 <Button text='Прайс-лист' icon_src={DownloadLogo} icon_alt='' width={214} height={59}></Button>
                 <p className="messenger-info">Связь в мессенджерах:</p>
-                {/* Уменьшили отступ между строкой и иконками до 2px */}
                 <div className="messenger-logos" style={{ marginTop: '2px', display: 'flex', gap: '10px' }}>
                     <Image 
                         src={whatsappLogo} 
