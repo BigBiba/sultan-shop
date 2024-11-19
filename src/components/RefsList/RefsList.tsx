@@ -1,16 +1,19 @@
-import Link from "next/link"
+import { Link } from "@/lib/i18n"
 import styles from "./RefsList.module.scss"
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+import * as m from "@/paraglide/messages.js"
+
 
 export default function RefsList() {
+    const listItems = [m.main_list_about(),
+        m.main_list_delivery(),
+        m.main_list_refund(),
+        m.main_list_contacts()].map(item =>
+        <li><Link className={styles.link} href="">{item}</Link></li>
+      );
     return (
         <div>
            <ul className={styles.list}>
-                <li><Link className={styles.link} href="">О компании</Link></li>
-                <li><Link className={styles.link} href="">Доставка и оплата</Link></li>
-                <li><Link className={styles.link} href="">Возврат</Link></li>
-                <li><Link className={styles.link} href="">Контакты</Link></li>
+                {listItems}
            </ul>
         </div>
     )

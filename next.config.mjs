@@ -1,10 +1,17 @@
+import { paraglide } from '@inlang/paraglide-next/plugin'
+
 /** @type {import('next').NextConfig} */
-export default async () => {
-  const { i18n } = await import('./next-i18next.config.js');
+const nextConfig = {
+    reactStrictMode: true,
+    experimental: {
+        appDir: true,
+    },
+}
 
-  return {
-    i18n,
-    // Any other Next.js configuration options can go here
-  };
-};
-
+export default paraglide({
+    paraglide: {
+        project: './project.inlang',
+        outdir: './src/paraglide'
+    },
+    ...nextConfig
+})
