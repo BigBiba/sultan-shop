@@ -1,3 +1,4 @@
+//'use client';
 import Image from "next/image";
 import Header from "@/components/Header/Header";
 import Banner from "@/components/Banner/Banner"
@@ -6,8 +7,8 @@ import styles from "./page.module.scss";
 import PromItems from "@/components/Items/promItems";
 import Categories from "@/components/Product categories/categories";
 import { Footer } from "@/components/Footer/footer";
-import Slider from "@/components/Slider/slider"
-// import Sponsor from "@/components/Sponsor/sponsor"
+//import Slider from "@/components/Slider/slider"
+//import Sponsor from "@/components/Sponsor/sponsor"
  
 
 
@@ -18,8 +19,8 @@ export default function Home({ params: { lang } }: { params: { lang: string } })
       <Banner></Banner>
       <PromItems />
       <Categories />
-      <Slider />
-      {/* <Sponsor /> */}
+      {/*<Slider />*/}
+      {/*<Sponsor /> */}
       <Contacts />
       <Footer />
     </div>
