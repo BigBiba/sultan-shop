@@ -11,8 +11,6 @@ import PhoneInfo from "../PhoneInfo/PhoneInfo";
 import Basket from "../Basket/Basket";
 import * as m from "@/paraglide/messages.js"
 
-
-
 export default function Header({lang}: { lang: string}) {
     return (
         <header className={styles.header}>

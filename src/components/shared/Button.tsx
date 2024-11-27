@@ -10,8 +10,6 @@ interface ButtonInterface {
     height?: number;
 }
 
-
-
 export function Button({text, text_size, icon_src, icon_alt, width, height}: ButtonInterface) {
     return (
         <button className={styles.button} style={{width: width, height: height, fontSize: text_size}}>

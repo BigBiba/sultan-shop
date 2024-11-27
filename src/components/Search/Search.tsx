@@ -3,7 +3,6 @@ import Image from "next/image"
 import SearchLogo from "@/public/icons/search.svg"
 import * as m from "@/paraglide/messages.js"
 
-
 export default function Search() {
     return (
         <div className={styles.search_bar}>

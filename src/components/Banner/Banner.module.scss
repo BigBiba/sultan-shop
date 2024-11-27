@@ -1,3 +1,5 @@
+@use "../../app/vars.scss" as vars;
+
 .container {
     height: 796px;
     width: 1920;
@@ -25,33 +27,32 @@
                 font-weight: 500;
                 font-size: 70px;
                 line-height: 77px;
-                color: #FFFFFF;
+                color: vars.$white;
                 margin-top: 98px;
                 margin-bottom: 40px;
             }
     
             .text2 {
-                // width: 551px;
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 45px;
-                color: #FFFFFF;
+                color: vars.$white;
                 margin-bottom: 60px;
             }
     
             .pluses_container {
                 display: flex;
-                margin-top: 91px;
+                margin-top: 90px;
     
                 span.plus {
-                    color: white;
+                    color: vars.$white;
                     font-size: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 39px; 
-                    height: 39px;
-                    background: #FFC856;
+                    width: 40px; 
+                    height: 40px;
+                    background: vars.$primary-color;
                     border-radius: 50%;
                     margin-right: 10px;
                 }
@@ -61,8 +62,8 @@
     
                     font-weight: 400;
                     font-size: 14px;
-                    line-height: 21px;
-                    color: white;
+                    line-height: 20px;
+                    color: vars.$white;
                     margin-right: 35px;
                 }
     
@@ -71,8 +72,8 @@
     
                     font-weight: 400;
                     font-size: 14px;
-                    line-height: 21px;
-                    color: white;
+                    line-height: 20px;
+                    color: vars.$white;
     
                     span {
                         font-weight: 700;

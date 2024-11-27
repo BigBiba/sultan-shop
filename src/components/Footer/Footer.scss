@@ -1,10 +1,12 @@
+@use "../../app/vars.scss" as vars;
+
 .footer {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
     padding: 20px;
-    background-color: #2C3E50; 
-    color: #FFFFFF; 
+    background-color: vars.$second-color;
+    color: vars.$white;
     margin-top: 20px; 
 
     @media (max-width: 950px) {
@@ -46,7 +48,7 @@
 }
 
 .footer-section a {
-    color: #FFFFFF; 
+    color: vars.$white;
     text-decoration: none; 
 
     &:hover {
@@ -147,7 +149,7 @@
     text-align: left; 
     margin: 10px 0; 
     cursor: pointer; 
-    color: #FFFFFF; 
+    color: vars.$white;
 
     &:hover {
         text-decoration: underline; 

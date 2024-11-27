@@ -12,12 +12,12 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children, params: { lang } }: RootLayoutProps) {
   return (
-      <LanguageProvider>
-   <html lang={languageTag()} dir='ltr'>
+    <LanguageProvider>
+      <html lang={languageTag()} dir='ltr'>
         <body>
           {children}
         </body>
       </html>
- </LanguageProvider>    
+    </LanguageProvider>    
   );
 }

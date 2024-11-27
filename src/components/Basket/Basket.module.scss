@@ -1,3 +1,5 @@
+@use "../../app/vars.scss" as vars;
+
 .container {
     display: flex;
     align-content: center;
@@ -16,10 +18,10 @@
             align-content: center;
             width: 22px; height: 22px;
 
-            background-color: #FFC85E;
+            background-color: vars.$primary-color;
             border-radius: 50%;
-            border: 3px solid #FFFFFF;
-            color: white
+            border: 4px solid vars.$white;
+            color: vars.$white;
         }
     }
 
@@ -29,12 +31,12 @@
         .basket {
             size: 12px;
             line-height: 18px;
-            color: #3F4E65;
+            color: vars.$second-color;
         }
         .sum {
-            color: #111111;
+            color: vars.$black;
             font-weight: bold;
-            line-height: 21px;
+            line-height: 20px;
         }
     }
     

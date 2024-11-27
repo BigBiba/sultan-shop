@@ -2,8 +2,6 @@ import Image from "next/image"
 import { Link } from "@/lib/i18n"
 import MailLogo from "@/public/icons/mail.svg"
 import styles from "./MailInfo.module.scss"
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
 
 import * as m from "@/paraglide/messages.js"
 

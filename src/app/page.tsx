@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "@/components/Header/Header";
 import Banner from "@/components/Banner/Banner"
 import { Contacts } from "@/components/Contacts/contacts";
@@ -7,7 +6,7 @@ import PromItems from "@/components/Items/promItems";
 import Categories from "@/components/Product categories/categories";
 import { Footer } from "@/components/Footer/footer";
 import Slider from "@/components/Slider/slider"
-// import Sponsor from "@/components/Sponsor/sponsor"
+import Sponsor from "@/components/Sponsor/sponsor"
  
 
 
@@ -19,7 +18,7 @@ export default function Home({ params: { lang } }: { params: { lang: string } })
       <PromItems />
       <Categories />
       <Slider />
-      {/* <Sponsor /> */}
+      <Sponsor />
       <Contacts />
       <Footer />
     </div>
