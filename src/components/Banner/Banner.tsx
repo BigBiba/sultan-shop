@@ -5,7 +5,8 @@ import { Button } from "../shared/Button"
 
 export default function Banner() {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
+
             <Image className={styles.image} src={BannerImage} alt=""></Image>
             <div className={styles.info}>
                 <div className={styles.all_text}>
