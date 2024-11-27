@@ -5,9 +5,9 @@
     width: 1920;
     position: relative;
     
-
     .image {
         transform: scale(-1, 1);
+
         object-fit: cover;
         max-height: 100%;
     }
