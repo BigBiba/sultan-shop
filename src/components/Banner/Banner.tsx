@@ -10,7 +10,8 @@ export default function Banner() {
             <Image className={styles.image} src={BannerImage} alt=""></Image>
             <div className={styles.info}>
                 <div className={styles.all_text}>
-                    <p className={styles.text1}>Бытовая химия, косметика и хозтовары</p>
+                    <h1 className={styles.text1}>Бытовая химия, косметика и хозтовары</p>
+
                     <p className={styles.text2}>оптом по кокчетаву и области</p>
                     <Button text="В КАТАЛОГ" icon_src="" icon_alt="" width={300} height={95}></Button>
                     <div className={styles.pluses_container}>
