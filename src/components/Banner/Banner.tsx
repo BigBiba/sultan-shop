@@ -18,7 +18,11 @@ export default function Banner() {
                         <span className={styles.plus}>+</span>
                         <div className={styles.plus1}>Только самые выгодные предложения</div>
                         <span className={styles.plus}>+</span>
-                        <div className={styles.plus2}>Бесплатная доставка<br /> по <span>Кокчетаву от 10 тыс ₸</span></div>
+                        <div className={styles.plus2}>
+                          Бесплатная доставка<br />
+                          по <span>Кокчетаву от 10 тыс ₸</span>
+                        </div>
+
                     </div>
                 </div>
                 
