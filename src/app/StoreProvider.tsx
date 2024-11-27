@@ -11,12 +11,13 @@ export default function StoreProvider({
     lang: string
   children: React.ReactNode
 }) {
-  const storeRef = useRef<AppStore>()
+  const storeRef = useRef<AppStore>();
+  
   if (!storeRef.current) {
-    // Create the store instance the first time this renders
-    storeRef.current = makeStore()
-    storeRef.current.dispatch(setLanguage(lang))
+    storeRef.current = makeStore();
+    storeRef.current.dispatch(setLanguage(lang));
   }
+
 
   return <Provider store={storeRef.current}>{children}</Provider>
 }
