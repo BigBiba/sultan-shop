@@ -1,7 +1,8 @@
 import Image from "next/image"
-import styles from "./Banner.module.scss"
 import BannerImage from "@/public/images/banner.png"
 import { Button } from "../shared/Button"
+
+import styles from "./Banner.module.scss"
 
 export default function Banner() {
     return (
@@ -11,7 +12,9 @@ export default function Banner() {
                 <div className={styles.all_text}>
                     <h1 className={styles.text1}>Бытовая химия, косметика и хозтовары</h1>
                     <p className={styles.text2}>оптом по кокчетаву и области</p>
-                    <Button text="В КАТАЛОГ" icon_src="" icon_alt="" width={300} height={95}></Button>
+                    <Button text="В КАТАЛОГ" 
+                            width={300} 
+                            height={95}></Button>
                     <div className={styles.pluses_container}>
                         <span className={styles.plus}>+</span>
                         <div className={styles.plus1}>Только самые выгодные предложения</div>

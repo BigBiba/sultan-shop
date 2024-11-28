@@ -1,7 +1,8 @@
 import Image from "next/image"
 import { Link } from "@/lib/i18n"
-import styles from "./MainLogo.module.scss"
 import Logo from "@/public/icons/sultan.svg"
+
+import styles from "./MainLogo.module.scss"
 
 export default function MainLogo() {
     return (

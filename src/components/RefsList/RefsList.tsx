@@ -1,6 +1,7 @@
 import { Link } from "@/lib/i18n"
-import styles from "./RefsList.module.scss"
 import * as m from "@/paraglide/messages.js"
+
+import styles from "./RefsList.module.scss"
 
 export default function RefsList() {
     const listItems = [m.main_list_about(),

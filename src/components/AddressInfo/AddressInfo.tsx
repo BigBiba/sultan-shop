@@ -1,8 +1,8 @@
 import Image from "next/image"
 import PinLogo from "@/public/icons/pin.svg"
-import styles from "./AddressInfo.module.scss"
-
 import * as m from "@/paraglide/messages.js"
+
+import styles from "./AddressInfo.module.scss"
 
 interface AddressInfoProps {
     params: {
