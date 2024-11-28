@@ -1,8 +1,8 @@
-import './contacts.scss';
 import Image from 'next/image'; 
 import image from './image.png'; 
 import map from './map.png'; 
 import doc from './doc.png'; 
+import './contacts.scss';
 
 export function Contacts() {
   return (

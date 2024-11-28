@@ -1,4 +1,3 @@
-import './Footer.scss'; 
 import Image from 'next/image'; 
 import sultanLogo from './sultan.png';
 import visaLogo from './visa.png'; 
@@ -7,6 +6,7 @@ import whatsappLogo from './whatsapp.png';
 import telegramLogo from './telegram.png'; 
 import DownloadLogo from "@/public/icons/download.svg"
 import { Button } from '../shared/Button';
+import './Footer.scss'; 
 
 export function Footer () {
     return (
