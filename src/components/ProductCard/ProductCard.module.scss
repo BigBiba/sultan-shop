@@ -1,0 +1,151 @@
+.ProductCard {
+	display: flex;
+	flex-direction: column; /* По умолчанию — столбец для меньших экранов */
+	justify-content: center; /* Центрирование по горизонтали */
+	align-items: flex-start;
+	max-width: 100%; /* Занимаем всю доступную ширину */
+	margin-bottom: 20px;
+	padding: 30px;
+	border: 1px solid #ccc;
+  
+	@media (min-width: 768px) { /* Для экранов шириной 768px и больше */
+	  flex-direction: row; /* Переключаемся на строку */
+	  align-items: flex-start;
+	}
+
+	p, strong {
+		font-size: 12px; /* Базовый размер текста */
+	
+		@media (min-width: 768px) {
+		  font-size: 16px; /* Увеличиваем размер на больших экранах */
+		}
+	  }
+	
+	  @media (min-width: 1024px) { /* Добавим ещё один медиа запрос для больших экранов */
+		  p, strong {
+			font-size: 24px; /* Ещё больше увеличиваем размер текста на очень больших экранах */
+		  }
+	  }
+	h3 {
+		font-size: 16px;
+	
+		@media (min-width: 768px) {
+		  font-size: 24px;
+		}
+	  }
+	
+	  @media (min-width: 1024px) { 
+		  h3{
+			font-size: 32px; /* Ещё больше увеличиваем размер текста на очень больших экранах */
+		  }
+	  }
+	}
+  
+  .imageContainer {
+	width: 100%; /* Занимаем всю ширину на маленьких экранах */
+	margin-bottom: 10px; /* Отступ снизу на маленьких экранах */
+  
+	@media (min-width: 768px) {
+	  width: 30%;
+	  margin-right: 20px;
+	  margin-bottom: 0; /* Убираем отступ на больших экранах */
+	}
+  }
+  
+  .imageContainer img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+  }
+  
+  .description {
+	width: 100%; /* Занимаем всю ширину на маленьких экранах */
+  
+	@media (min-width: 768px) {
+	  width: 40%;
+	}
+  
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .description > * {
+	margin-bottom: 5px;
+  }
+  
+  
+  
+  .productName {
+	font-weight: bold;
+	font-size: 36px;
+	margin-top: 0;
+	text-align: left;
+  }
+  
+  .priceContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  
+	@media (min-width: 768px) {
+	  justify-content: space-between; /* Распределяем элементы по ширине */
+	}
+  
+  }
+  
+  .price {
+	font-weight: bold;
+	font-size: 24px;
+	margin-right: 10px;
+	flex-grow:1;
+  }
+  
+  .quantityButtons {
+	display: flex;
+	align-items: center; /* Vertically center the input */
+	margin-bottom: 10px;
+	justify-content: space-between;
+  }
+  
+  .quantityInput {
+	width: 40px;
+	margin: 0 5px;
+	padding: 0;
+	border: none; /* Remove the border */
+	text-align: center;
+	font-size: 16px; /* Increase font size */
+  }
+  
+  .button {
+	background-color: #ffc85e;
+	border-radius: 50%;
+	padding: 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 0 5px;
+	transition: all 0.3s ease-in-out;
+	border: none; /* Добавлено */
+	&:hover {
+	  background-color: rgba(255, 134, 135, 1);
+	}
+	@media (min-width: 768px) {
+		padding: 10px 20px; /* Увеличиваем padding на больших экранах */
+		font-size: 24px;     /* Увеличиваем размер шрифта */
+	  }
+  }
+  
+  .addToCartButton {
+	margin-bottom: 10px;
+  }
+  
+  .stockText {
+	font-size: 12px;
+	text-align: left;
+  }
+
+  .boldText {
+	font-weight: bold;
+  }
