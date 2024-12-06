@@ -11,7 +11,7 @@ export default function PromItems() {
       <h2 style={{ textAlign: 'left', fontSize: '30px' }}><span style={{ color: '#FFBF00' }}>Акционные</span> товары</h2>
       <div className="item-container">
       {items.map(item => (
-        <a>
+        <Link href={`/product-card/${item.id}`} className='link'>
             <article className="item" key={item.id}>
               <Image
                 src={item.imageId}
@@ -22,10 +22,10 @@ export default function PromItems() {
               />
               <div className="label">Популярное</div>
               <div className="item-ml">{item.ml} мл</div>
-              <Link href={`/product-card/${item.id}`} className="item-name">
+              <text href={`/product-card/${item.id}`} className="item-name">
                 <strong>{item.name.split(' ')[0]}</strong>
                 {item.name}
-              </Link>
+              </text>
               <div className="item-details">
                 Штрихкод: <span className="item-barcode">{item.barcode}</span>
               </div>
@@ -38,7 +38,7 @@ export default function PromItems() {
               <div className="item-price">{item.price} ₸</div>
               <Button text='В КОРЗИНУ' text_size={10} icon_src={CartLogo} icon_alt='' width={153} height={45}></Button>
             </article>
-        </a>
+        </Link>
       ))}      
       </div>
     </div>

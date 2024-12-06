@@ -1,4 +1,12 @@
-.item {
+.item-container {
+  display: flex;
+      flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+
+  .item {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     margin: 20px;
@@ -77,6 +85,9 @@
   .spacer {
     margin: 20px 0;
   }
+}
+
+
   
   /* Адаптивные медиа-запросы */
 @media (max-width: 768px) { /* Для планшетов и маленьких экранов */
