@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from "next/image"
 
+import ProductCard from '@/components/ProductCard/ProductCard';
 import { Item } from "@/public/models/Item";
 import {items} from "@/public/data/items"
 
@@ -16,10 +17,7 @@ export default function ProductPage({params}: {params: {id: string}}) {
     }
     return (
       <div>
-        <Image
-        src={item.imageId}
-        alt=''></Image>
-
+        <ProductCard item={item}></ProductCard>
       </div>
     );
 }

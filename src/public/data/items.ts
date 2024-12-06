@@ -6,43 +6,70 @@ import image3 from './3.jpg'
 import image4 from './4.jpg'
 
 export const items: Item[] = [{
-  id: 0, // Used in JSX as a key
-  ml: '450',
-  imageId: image1,
-  name: 'SORTI Средство для мытья посуды',
-  barcode: '40215987352',
-  manufacturer:'Нефис',
-  brand:'AOS',
-  price: '48,78',
+  id: 0, // Уникальный идентификатор
+  shortNameRu: "Средство для мытья посуды",
+  shortNameEn: "Dishwashing detergent",
+  nameRu: "Средство для мытья посуды",
+  nameEn: "Dishwashing detergent",
+  imageId: image1, // ID или путь изображения
+  sizeType: "мл",
+  size: 1020, // Объем
+  category: ["Мыло", "Хозтовары"], // Категории
+  barcode: 40215987352, // Штрихкод
+  brand: 'AOS', // Бренд
+  article: 460404, // Артикул
+  manufacturer: "AOS", // Производитель
+  amount: 2, // Кол-во
+  price: 48.78, // Цена
 
 }, {
-  id: 1, // Used in JSX as a key
-  ml: '450',
-  imageId: image2,
-  name: 'AOS Средство для мытья посуды',
-  barcode: '40215987352',
-  manufacturer:'Нефис',
-  brand:'AOS',
-  price: '48,78',
+  id: 1, // Уникальный идентификатор
+  shortNameRu: "Средство для мытья посуды",
+  shortNameEn: "Dishwashing detergent",
+  nameRu: "Средство для мытья посуды",
+  nameEn: "Dishwashing detergent",
+  imageId: image2, // ID или путь изображения
+  sizeType: "мл",
+  size: 1020, // Объем
+  category: ["Мыло", "Хозтовары"], // Категории
+  barcode: 40215987352, // Штрихкод
+  brand: 'AOS', // Бренд
+  article: 460404, // Артикул
+  manufacturer: "AOS", // Производитель
+  amount: 2, // Кол-во
+  price: 48.78, // Цена
 
 }, {
-  id: 2, // Used in JSX as a key
-  ml: '450',
-  imageId: image3,
-  name: 'ARIEL Средство для мытья посуды',
-  barcode: '40215987352',
-  manufacturer:'Нефис',
-  brand:'AOS',
-  price: '48,78',
+  id: 2, // Уникальный идентификатор
+  shortNameRu: "Средство для мытья посуды",
+  shortNameEn: "Dishwashing detergent",
+  nameRu: "Средство для мытья посуды",
+  nameEn: "Dishwashing detergent",
+  imageId: image3, // ID или путь изображения
+  sizeType: "мл",
+  size: 1020, // Объем
+  category: ["Мыло", "Хозтовары"], // Категории
+  barcode: 40215987352, // Штрихкод
+  brand: 'AOS', // Бренд
+  article: 460404, // Артикул
+  manufacturer: "AOS", // Производитель
+  amount: 2, // Кол-во
+  price: 48.78, // Цена
 
 }, {
-  id: 3, // Used in JSX as a key
-  ml: '450',
-  imageId: image4,
-  name: 'BIMAX Средство для мытья посуды',
-  barcode: '40215987352',
-  manufacturer:'Нефис',
-  brand:'AOS',
-  price: '48,78',
-
+  id: 3, // Уникальный идентификатор
+  shortNameRu: "Средство для мытья посуды",
+  shortNameEn: "Dishwashing detergent",
+  nameRu: "Средство для мытья посуды",
+  nameEn: "Dishwashing detergent",
+  imageId: image4, // ID или путь изображения
+  sizeType: "мл",
+  size: 1020, // Объем
+  category: ["Мыло", "Хозтовары"], // Категории
+  barcode: 40215987352, // Штрихкод
+  brand: 'AOS', // Бренд
+  article: 460404, // Артикул
+  manufacturer: "AOS", // Производитель
+  amount: 2, // Кол-во
+  price: 48.78, // Цена
 }];

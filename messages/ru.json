@@ -11,5 +11,15 @@
     "main_header_phone_time": "время работы",
     "main_header_phone_request": "Заказать звонок",
     "main_header_price": "Прайс-лист",
-    "main_header_basket": "Корзина"
+    "main_header_basket": "Корзина",
+    "product_info_having": "В наличии",
+    "product_info_basket": "В корзину",
+    "product_info_delivery_from": "При покупке от",
+    "product_info_delivery_free": "бесплатная доставка по Кокчетаву и области",
+    "product_info_price": "Прайс лист",
+    "product_info_manufacturer": "Производитель",
+    "product_info_brand": "Бренд",
+    "product_info_article": "Артикул",
+    "product_info_amount": "Кол-во в коробке",
+    "product_info_barcode": "Штрихкод"
 }

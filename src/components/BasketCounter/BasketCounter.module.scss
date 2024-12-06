@@ -1,0 +1,20 @@
+@use "../../app/vars.scss" as vars;
+
+.container {
+    .button {
+        width: 34px;
+        height: 24px;
+        border-radius: 1000px;
+        border: 0;
+        background-color: vars.$peach;
+        gap:10px;
+    }
+
+    .count {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
