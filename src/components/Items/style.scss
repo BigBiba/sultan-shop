@@ -1,3 +1,5 @@
+@use "../../app/vars.scss" as vars;
+
 .item-container {
   display: flex;
       flex-wrap: wrap;
@@ -28,8 +30,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: green;
-      color: white;
+      background-color: vars.$green;
+      color: vars.$white;
       padding: 5px;
       font-size: 12px;
       z-index: 1;
@@ -53,14 +55,14 @@
       text-align: left;
       margin-top: 5px;
       font-size: 12px;
-      color: black;
+      color: vars.$black;
     }
   
     &-price {
       text-align: left;
       margin-top: 5px;
       font-size: 18px;
-      color: black;
+      color: vars.$black;
       font-family: 'sans-serif';
     }
   
@@ -68,12 +70,12 @@
       text-align: left;
       margin-top: 5px;
       font-size: 12px;
-      color: gray;
+      color: vars.$grey;
     }
   
     &-ml {
       text-align: left;
-      color: gray;
+      color: vars.$grey;
       font-size: 12px;
     }
   

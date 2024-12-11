@@ -1,3 +1,5 @@
+@use "../../app/vars.scss" as vars;
+
 .info {
     display: flex;
     align-items: center;
@@ -10,15 +12,14 @@
 
     .container {
         .link {
-            color: black;
+            color: vars.$black;
             font-weight: bold;
             text-decoration: none;
             margin: 0;
         }
         .text {
-            color: #3F4E65;
+            color: vars.$second-color;
             margin: 0;
         }
     }
-    
 }

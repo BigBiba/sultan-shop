@@ -1,8 +1,8 @@
-import styles from "./Search.module.scss"
 import Image from "next/image"
 import SearchLogo from "@/public/icons/search.svg"
 import * as m from "@/paraglide/messages.js"
 
+import styles from "./Search.module.scss"
 
 export default function Search() {
     return (

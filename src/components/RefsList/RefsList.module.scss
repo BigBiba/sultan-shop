@@ -1,3 +1,5 @@
+@use "../../app/vars.scss" as vars;
+
 .list {
     display: flex;
     gap: 30px 30px;
@@ -7,7 +9,7 @@
         height: 29px;
         border: 1px;
         border-style: dashed;
-        color: #3F4E65;
+        color: vars.$second-color;
         opacity: 10%;
         margin-left: 30px;
     }
@@ -16,11 +18,9 @@
         display: inline;
         
         .link {
-            color: #3F4E65;
+            color: vars.$second-color;
             text-decoration: none;
             margin: 0;
         }
     }
-    
-
 }

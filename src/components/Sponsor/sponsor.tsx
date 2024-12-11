@@ -1,10 +1,14 @@
+'use client'
+
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
+
 import { sliderData } from './data.js';
+
 import './style.css';
 
 export default function Slider() {
@@ -20,11 +24,9 @@ export default function Slider() {
 
     return (
         <div>
-            <strong>
-                <h2 style={{ textAlign: 'left', fontSize: '30px' }}>
-                    <span style={{ color: '#FFBF00' }}>ЛУЧШИЕ</span> ТОВАРЫ
-                </h2>
-            </strong>
+            <h2 style={{ textAlign: 'left', fontSize: '30px' }}>
+                <span style={{ color: '#FFBF00' }}>ЛУЧШИЕ</span> ТОВАРЫ
+            </h2>
             <div style={{ color: 'gray' }}>От ведущих мировых брендов</div>
             <div className="slider-container-sec">
                 <Swiper

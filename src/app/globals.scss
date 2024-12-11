@@ -1,9 +1,10 @@
 @use "/node_modules/reset-css/sass/reset";
 
 :root { font-family: "Inter", sans-serif; }
+
 @supports (font-variation-settings: normal) {
     :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
-  }
+}
 
 @font-face {
     font-family: InterVariable;
@@ -18,4 +19,4 @@
     font-weight: 100 900;
     font-display: swap;
     src: url("../public/fonts/InterVariable-Italic.woff2") format("woff2");
-  }
+}

@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { Link } from "@/lib/i18n"
 import BasketLogo from "@/public/icons/basket.svg"
-import styles from "./Basket.module.scss"
 import * as m from "@/paraglide/messages.js"
+
+import styles from "./Basket.module.scss"
 
 export default function Basket() {
     const cartTotal = 0;

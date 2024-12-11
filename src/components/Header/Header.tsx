@@ -4,14 +4,13 @@ import MailInfo from "../MailInfo/MailInfo"
 import CatalogLogo from "@/public/icons/catalog.svg"
 import DownloadLogo from "@/public/icons/download.svg"
 import RefsList from "../RefsList/RefsList";
-import styles from "./Header.module.scss"
 import MainLogo from "../MainLogo/MainLogo";
 import Search from "../Search/Search";
 import PhoneInfo from "../PhoneInfo/PhoneInfo";
 import Basket from "../Basket/Basket";
 import * as m from "@/paraglide/messages.js"
 
-
+import styles from "./Header.module.scss"
 
 export default function Header({lang}: { lang: string}) {
     return (
@@ -27,12 +26,20 @@ export default function Header({lang}: { lang: string}) {
             <div className={styles.bottom}>
                 <MainLogo></MainLogo>
                 <div className={styles.catalog_button}>
-                    <Button text={m.main_header_catalog()} icon_src={CatalogLogo} icon_alt="Catalog" width={192} height={59}></Button>
+                    <Button text={m.main_header_catalog()} 
+                            icon_src={CatalogLogo} 
+                            icon_alt="Catalog" 
+                            width={192} 
+                            height={59}></Button>
                 </div>
                 <Search></Search>
                 <PhoneInfo></PhoneInfo>
                 <span></span>
-                <Button text={m.main_header_price()} icon_src={DownloadLogo} icon_alt="Price" width={200} height={59}></Button>
+                <Button text={m.main_header_price()} 
+                        icon_src={DownloadLogo} 
+                        icon_alt="Price" 
+                        width={200} 
+                        height={59}></Button>
                 <span></span>
                 <Basket></Basket>
             </div>

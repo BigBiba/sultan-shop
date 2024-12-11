@@ -1,14 +1,14 @@
-import './Footer.scss'; 
 import Image from 'next/image'; 
 import sultanLogo from './sultan.png';
 import visaLogo from './visa.png'; 
 import mastercardLogo from './mastercard.png'; 
 import whatsappLogo from './whatsapp.png'; 
 import telegramLogo from './telegram.png'; 
-import DownloadLogo from "@/public/icons/download.svg"
+import DownloadLogo from "@/public/icons/download.svg";
 import { Button } from '../shared/Button';
+import './Footer.scss'; 
 
-export function Footer () {
+export function Footer() {
     return (
         <footer className="footer">
             <div className="footer-section">
@@ -49,7 +49,7 @@ export function Footer () {
                 <h3>Скачать прайс-лист:</h3>
                 <Button text='Прайс-лист' icon_src={DownloadLogo} icon_alt='' width={214} height={59}></Button>
                 <p className="messenger-info">Связь в мессенджерах:</p>
-                <div className="messenger-logos" style={{ marginTop: '2px', display: 'flex', gap: '10px' }}>
+                <div className="messenger-logos">
                     <Image 
                         src={whatsappLogo} 
                         alt="WhatsApp" 
@@ -73,7 +73,7 @@ export function Footer () {
                     <p className="contact-email header-text">opt.sultan@mail.ru</p>
                     <p className="contact-availability">На связи в любое время</p>
                 </div>
-                <div className="payment-logos" style={{ marginTop: '10px' }}>
+                <div className="payment-logos">
                     <Image 
                         src={visaLogo} 
                         alt="Visa" 
