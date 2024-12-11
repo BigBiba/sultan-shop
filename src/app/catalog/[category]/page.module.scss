@@ -1,0 +1,6 @@
+@use "../../vars.scss" as vars;
+
+.item_container {
+    display: flex;
+        flex-wrap: wrap;
+}
