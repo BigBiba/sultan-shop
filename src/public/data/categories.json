@@ -1,0 +1,57 @@
+{
+    "id": 1,
+    "category": "CosmeticsAndHygiene",
+    "nameRu": "Косметика и гигиена",
+    "nameEn": "Cosmetics And Hygiene",
+    "subcategories": [
+        {
+            "id": 1,
+            "category": "Hair",
+            "nameRu": "Волосы",
+            "nameEn": "Hair",
+            "subcategories": []
+        },
+        {
+            "id": 2,
+            "category": "Body",
+            "nameRu": "Тело",
+            "nameEn": "Body",
+            "subcategories": []
+        },
+        {
+            "id": 3,
+            "category": "Hands",
+            "nameRu": "Руки",
+            "nameEn": "Hands",
+            "subcategories": []
+        },
+        {
+            "id": 4,
+            "category": "Mouth",
+            "nameRu": "Рот",
+            "nameEn": "Mouth",
+            "subcategories": []
+        },
+        {
+            "id": 5,
+            "category": "Shaving",
+            "nameRu": "Бритье",
+            "nameEn": "Shaving",
+            "subcategories": []
+        },
+        {
+            "id": 6,
+            "category": "Tan",
+            "nameRu": "Загар",
+            "nameEn": "Tan",
+            "subcategories": []
+        },
+        {
+            "id": 7,
+            "category": "Head",
+            "nameRu": "Голова",
+            "nameEn": "Head",
+            "subcategories": []
+        }
+    ]
+}
