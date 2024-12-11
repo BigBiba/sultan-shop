@@ -1,0 +1,106 @@
+@use "../../app/vars.scss" as vars;
+
+.product_card {
+    display: flex;
+    
+    .info {
+        .having {
+            color: vars.$green;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18.2px;
+            margin-bottom: 10px;
+        }
+        .names {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 10px;
+
+            .full_name {
+                font-weight: 400;
+            }
+        }
+
+        .size {
+            margin-bottom: 15px;
+        }
+
+        .basket {  
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .price {
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        .basket > * {
+            margin-right: 40px;
+        }
+
+        .price_list_container {
+            display: flex;
+            height: 78px;
+            margin-bottom: 35px;
+
+            button {
+                border: 0px;
+                background-color: vars.$white;
+            }
+
+            .share {
+                width: 78px;
+            }
+
+            .delivery {
+                display: flex;
+                width: 316px;
+                background-color: vars.$white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                padding: 10px;
+                gap: 10px;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            .price_list {
+                width: 186px;
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .price_list_container > * {
+            
+            border-radius: 10px;
+            box-shadow: 0px 15px 70px -11px #2B1C010A;
+        }
+
+        .details {
+            li {
+                color: vars.$second-color;
+                line-height: 21px;
+                font-size: 14px;
+                font-weight: 300;
+                margin-bottom: 5px;
+
+                span {
+                    color: vars.$black;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

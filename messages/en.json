@@ -11,5 +11,15 @@
     "main_header_phone_time": "working hours",
     "main_header_phone_request": "Order a call",
     "main_header_price": "Price list",
-    "main_header_basket": "Basket"
+    "main_header_basket": "Basket",
+    "product_info_having": "In stock",
+    "product_info_basket": "Into the basket",
+    "product_info_delivery_from": "When buying from",
+    "product_info_delivery_free": "free shipping in Kokchetav and the region",
+    "product_info_price": "Price list",
+    "product_info_manufacturer": "Manufacturer",
+    "product_info_brand": "Brand",
+    "product_info_article": "Article",
+    "product_info_amount": "Amount",
+    "product_info_barcode": "Barcode"
 }
