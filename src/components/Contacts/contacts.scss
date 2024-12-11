@@ -1,0 +1,177 @@
+.container {
+  position: relative;
+  margin: 0 auto 80px;
+  max-width: 1366px;
+  min-height: 600px;
+  overflow: hidden;
+  font-family: var(--font-inter);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.overlay {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 736px;
+  height: auto;
+  padding: 48px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+}
+
+.overlay h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  color: var(--blue);
+  margin: 10px 0 20px;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: var(--blue);
+  margin-bottom: 16px;
+}
+
+.contactInfo {
+  display: flex;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.sale {
+  margin-left: 0;
+  flex: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.iconText h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.iconText p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--blue);
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+
+  .overlay {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .overlay {
+    top: 20px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: 0 auto 60px;
+  }
+
+  .overlay {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: 0 auto 40px;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .overlay h2 {
+    font-size: 28px;
+    margin: 0 0 12px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .iconText {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .iconText h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .iconText p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .sale {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .overlay h2,
+  .overlay h4 {
+    color: #3F4E65;
+    border-radius: 4px;
+  }
+
+  .overlay h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}

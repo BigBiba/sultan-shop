@@ -1,0 +1,25 @@
+@use "../../app/vars.scss" as vars;
+
+.info {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 14px;
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .container {
+        .link {
+            color: vars.$black;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0;
+        }
+        .text {
+            color: vars.$second-color;
+            margin: 0;
+        }
+    }
+}

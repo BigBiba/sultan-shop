@@ -1,0 +1,26 @@
+@use "../../app/vars.scss" as vars;
+
+.list {
+    display: flex;
+    gap: 30px 30px;
+    
+    li:not(:last-child)::after {
+        content: "";
+        height: 29px;
+        border: 1px;
+        border-style: dashed;
+        color: vars.$second-color;
+        opacity: 10%;
+        margin-left: 30px;
+    }
+
+    li {
+        display: inline;
+        
+        .link {
+            color: vars.$second-color;
+            text-decoration: none;
+            margin: 0;
+        }
+    }
+}

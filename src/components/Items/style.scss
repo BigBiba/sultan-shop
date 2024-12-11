@@ -1,0 +1,107 @@
+@use "../../app/vars.scss" as vars;
+
+.item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 auto;
+    max-width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; // Минимальная высота статьи
+  
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: vars.$green;
+      color: vars.$white;
+      padding: 5px;
+      font-size: 12px;
+      z-index: 1;
+      border-radius: 5px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    &-name {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  
+    &-barcode,
+    &-manufacturer,
+    &-brand {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 12px;
+      color: vars.$black;
+    }
+  
+    &-price {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 18px;
+      color: vars.$black;
+      font-family: 'sans-serif';
+    }
+  
+    &-details {
+      text-align: left;
+      margin-top: 5px;
+      font-size: 12px;
+      color: vars.$grey;
+    }
+  
+    &-ml {
+      text-align: left;
+      color: vars.$grey;
+      font-size: 12px;
+    }
+  
+    footer {
+      margin-top: auto; // Прижимает футер вниз
+    }
+  }
+  
+  .spacer {
+    margin: 20px 0;
+  }
+  
+  /* Адаптивные медиа-запросы */
+@media (max-width: 768px) { /* Для планшетов и маленьких экранов */
+  .item {
+      max-width: 90%; /* Элементы занимают всю ширину контейнера */
+      margin: 10px auto; /* Центрирование элемента */
+  }
+  
+  .item-container {
+      justify-content: center; /* Центрирование контейнеров */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1020px) { /* Для больших планшетов */
+  .item {
+      max-width: 45%; /* Два элемента в ряд */
+      margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) { /* Для десктопов */
+  .item {
+      max-width: 20%; /* Три элемента в ряд */
+      margin: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../../app/vars.scss" as vars;
+
+.info {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-right: 20px;
+    font-size: 14px;
+
+    p {
+        color: vars.$second-color;
+    }
+    span {
+        font-weight: bold;
+        color: black;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+}
+
+.info::after {
+    content: "";
+    border: 1px;
+    height: 40px;
+    border-style: dashed;
+    color: vars.$second-color;
+    opacity: 10%;
+    margin-left: 20px;
+}

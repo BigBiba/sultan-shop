@@ -1,0 +1,44 @@
+@use "../../app/vars.scss" as vars;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    .top {
+        .info_container {
+            display: flex;
+        }
+        width: 1920;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    hr {
+        margin: 0;
+        color: vars.$second-color;
+        opacity: 20%;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 110px;
+
+        .catalog_button {
+            margin-right: 16px;
+        }
+
+        span {
+            content: "";
+            height: 48px;
+            border: 1px;
+            border-style: dashed;
+            color: vars.$second-color;
+            opacity: 10%;
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+}

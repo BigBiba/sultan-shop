@@ -1,0 +1,71 @@
+/* Основной стиль */
+.slider-container-sec {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 200px; 
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px; /* Добавляем отступы по бокам */
+    box-sizing: border-box; /* Включаем отступы в общую ширину */
+}
+
+.slide-content-sec {
+    height: 200px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; 
+    position: relative; 
+    z-index: 2;
+}
+
+.slide-image-sec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    z-index: 1;
+}
+
+.mySwiper2 .swiper-pagination-bullet {
+    width: 10px;
+    height: 5px;
+    background: orange;
+    border-radius: 2px;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 5px;
+    background: orange;
+    border-radius: 3px;
+}
+
+/* Медиа-запросы для адаптации под разные экраны */
+@media screen and (max-width: 1200px) {
+    .slider-container-sec {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slider-container-sec {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-container-sec {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider-container-sec {
+        height: 120px;
+    }
+}

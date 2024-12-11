@@ -1,0 +1,43 @@
+@use "../../app/vars.scss" as vars;
+
+.container {
+    display: flex;
+    align-content: center;
+
+    .cart_operator {
+        position: relative;
+        margin-right: 24px;
+        width: 46px; height: 46px;
+        align-content: center;
+    
+        .indicator {
+            position: absolute;
+            top: 2px;
+            left: 32px;
+            text-align: center;
+            align-content: center;
+            width: 22px; height: 22px;
+
+            background-color: vars.$primary-color;
+            border-radius: 50%;
+            border: 4px solid vars.$white;
+            color: vars.$white;
+        }
+    }
+
+    .text_container {
+        align-content: center;
+
+        .basket {
+            size: 12px;
+            line-height: 18px;
+            color: vars.$second-color;
+        }
+        .sum {
+            color: vars.$black;
+            font-weight: bold;
+            line-height: 20px;
+        }
+    }
+    
+}

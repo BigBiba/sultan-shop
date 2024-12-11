@@ -1,0 +1,86 @@
+@use "../../app/vars.scss" as vars;
+
+.container {
+    height: 796px;
+    width: 1920;
+    position: relative;
+    
+    .image {
+        transform: scale(-1, 1);
+
+        object-fit: cover;
+        max-height: 100%;
+    }
+
+    .info {
+        position: absolute;
+        width: 920px;
+        top: 0;
+        bottom: 0;
+        backdrop-filter: blur(13px);
+        background-image: linear-gradient(90deg, #8A94AB, #8A94AB00);
+
+        .all_text {
+            margin-left: 277px;
+            .text_products {
+                width: 570px;
+                font-weight: 500;
+                font-size: 70px;
+                line-height: 76px;
+                color: vars.$white;
+                margin-top: 98px;
+                margin-bottom: 40px;
+            }
+    
+            .text_wholesale {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 45px;
+                color: vars.$white;
+                margin-bottom: 60px;
+            }
+    
+            .pluses_container {
+                display: flex;
+                margin-top: 90px;
+    
+                span.plus {
+                    color: vars.$white;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px; 
+                    height: 40px;
+                    background: vars.$primary-color;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+    
+                .plus1 {
+                    width: 166px;
+    
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: vars.$white;
+                    margin-right: 36px;
+                }
+    
+                .plus2 {
+                    width: 178px;
+    
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: vars.$white;
+    
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }        
+    }
+}
