@@ -1,80 +1,87 @@
-@use "../../app/vars.scss" as vars;
+@import "../../app/vars"; // Импортируйте переменные
 
 .link {
     text-decoration: none;
-  
+
     .item {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      position: relative;
-      margin: 20px;
-      text-align: center;
-      flex: 1 1 auto;
-      max-width: 200px;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 300px; // Минимальная высота статьи
-    
-      .label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: vars.$green;
-        color: vars.$white;
-        padding: 5px;
-        font-size: 12px;
-        z-index: 1;
-        border-radius: 5px;
-      }
-    
-      img {
-        width: 100%;
-        height: auto;
-      }
-    
-      &_name {
-        text-align: left;
-        margin-top: 5px;
-        font-size: 14px;
-      }
-    
-      &_barcode,
-      &_manufacturer,
-      &_brand {
-        text-align: left;
-        margin-top: 5px;
-        font-size: 12px;
-        color: vars.$black;
-      }
-    
-      &_price {
-        text-align: left;
-        margin-top: 5px;
-        font-size: 18px;
-        color: vars.$black;
-        font-family: 'sans-serif';
-      }
-    
-      &_details {
-        text-align: left;
-        margin-top: 5px;
-        font-size: 12px;
-        color: vars.$grey;
-      }
-    
-      &_ml {
-        text-align: left;
-        color: vars.$grey;
-        font-size: 12px;
-      }
-    
-      footer {
-        margin-top: auto; // Прижимает футер вниз
-      }
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        margin: 20px;
+        text-align: center;
+        flex: 1 1 auto;
+        max-width: 200px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 300px;
+
+        .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $green;
+            color: $white;
+            padding: 5px;
+            font-size: 12px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &_name {
+            text-align: left;
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 600; // Установите жирность
+            color: $black; // Убедитесь, что цвет черный
+        }
+
+        &_barcode,
+        &_manufacturer,
+        &_brand { // Добавлено _brand для применения стилей
+            text-align: left;
+            font-size: 12px;
+            color: $black;
+            font-weight: 600; // Установите жирность
+        }
+
+        &_price {
+            margin-top: 5px; // Убедитесь, что отступ сверху есть
+            font-size: 16px; // Уменьшите размер шрифта для цены
+            font-weight: 600; // Установите жирность
+        }
+
+        &_details {
+            text-align: left;
+            margin: 10px 0; // Установите равные отступы между элементами
+            font-size: 12px;
+            color: $grey;
+        }
+
+        &_ml {
+            text-align: left;
+            color: $grey;
+            font-size: 12px;
+        }
+
+        footer {
+            margin-top: auto;
+        }
     }
-    
+
+    .item_price_button_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+
     .spacer {
-      margin: 20px 0;
+        margin: 20px 0;
     }
-  }
+}
