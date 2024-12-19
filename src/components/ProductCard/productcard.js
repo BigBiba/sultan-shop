@@ -1,3 +1,6 @@
+'use client';
+"use strict";
+
 import { useState } from 'react';
 
 import CartLogo from "@/public/icons/minicart.svg";
@@ -6,6 +9,31 @@ import { Link } from 'next/link';
 
 import Image from 'next/image'; // Импорт компонент Image из next/image
 import styles from './ProductCard.module.scss'; // Обратите внимание на .module.scss
+
+import { 
+  showErrorMessage,
+  setBasketLocalStorage,
+  getBasketLocalStorage,
+  checkingRelevanceValueBasket
+} from './utils.js';
+
+const cards = document.querySelector('.ProductCard');
+
+cards.addEventListener('click', handleCardClick);
+
+function handleCardClick(event){
+  const targetButton = event.target.closest('.addToCartButton');
+  if (!targetButton) return;
+
+  const card = targetButton.closest('.ProductCard');
+  const id = card.dataset.id;
+  const basket = getBasketLocalStorage();
+
+  if (basket.includes(id)) return;
+
+  basket.push(id);
+  setBasketLocalStorage(basket);
+}
 
 const ProductCard = ({ item, productUrl }) => {
   const [quantity, setQuantity] = useState(1);
@@ -21,11 +49,7 @@ const ProductCard = ({ item, productUrl }) => {
   const decrementQuantity = () => setQuantity(Math.max(1, quantity - 1));
   const toggleDescription = () => setDescriptionOpen(!isDescriptionOpen);
 
-  const addToCart = () => {
-    if (item.ml > 0) {
-      alert(`Добавлено в корзину: ${quantity}`);
-    }
-  };
+  
 
   const stockText = (item.ml > 0) ? <span style={{ color: 'green' }}>В наличии</span> : <span style={{ color: 'red' }}>Нет в наличии</span>;
 
@@ -45,7 +69,8 @@ const ProductCard = ({ item, productUrl }) => {
         <input type="number" value={quantity} readOnly className={styles.quantityInput} />
         <button className={styles.button} onClick={() => incrementQuantity()}>+</button>
           </div>
-          <Button className={styles.addToCartButton} text='В КОРЗИНУ' text_size={16} icon_src={CartLogo} icon_alt='' width={210} height={60} onClick={addToCart}/>
+          <Button className={styles.addToCartButton} text='В КОРЗИНУ' text_size={16} icon_src={CartLogo} icon_alt='' 
+          width={210} height={60} onClick={addToCart}/>
         </div>
         <p> Производитель: <span className={styles.boldText}>{item.manufacturer}</span></p>
         <p> Бренд: <span className={styles.boldText}>{item.brand}</span></p>

@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "../shared/Button";
 import AddressInfo from "../AddressInfo/AddressInfo";
 import MailInfo from "../MailInfo/MailInfo"
@@ -9,6 +11,8 @@ import Search from "../Search/Search";
 import PhoneInfo from "../PhoneInfo/PhoneInfo";
 import Basket from "../Basket/Basket";
 import * as m from "@/paraglide/messages.js"
+
+import Link from 'next/link';
 
 import styles from "./Header.module.scss"
 
@@ -42,6 +46,9 @@ export default function Header({lang}: { lang: string}) {
                         height={59}></Button>
                 <span></span>
                 <Basket></Basket>
+                {/*<Link href="/cart">
+                    <a></a>
+                </Link>*/}
             </div>
         </header>
     )

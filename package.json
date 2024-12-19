@@ -17,6 +17,7 @@
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",
     "i18next-resources-to-backend": "^1.2.1",
+    "js-cookie": "^3.0.5",
     "next": "14.2.15",
     "next-i18next": "^15.3.1",
     "react": "^18.3.1",
@@ -28,12 +29,12 @@
     "swiper": "^11.1.14"
   },
   "devDependencies": {
+    "@inlang/paraglide-js": "1.11.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.15",
-    "typescript": "^5",
-    "@inlang/paraglide-js": "1.11.3"
+    "typescript": "^5"
   }
 }
