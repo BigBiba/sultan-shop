@@ -18,7 +18,7 @@ export default function Home({ params: { lang } }: { params: { lang: string } })
       <PromItems />
       <Categories />
       <Slider />
-      <Sponsor />
+      {/* <Sponsor /> */}
       <Contacts />
       <Footer />
     </div>
