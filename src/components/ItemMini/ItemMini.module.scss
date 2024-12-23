@@ -1,4 +1,4 @@
-@use "../../app/vars" as *; // Импортируем переменные
+@import "../../app/vars"; // Импортируйте переменные
 
 .link {
     text-decoration: none;
@@ -29,7 +29,7 @@
         }
 
         img {
-            width: 100%;
+            width: auto;
             height: auto;
         }
 
@@ -37,29 +37,28 @@
             text-align: left;
             margin-top: 5px;
             font-size: 14px;
-            font-weight: 600;
-            color: $black;
+            font-weight: 600; // Установите жирность
+            color: $black; // Убедитесь, что цвет черный
         }
 
         &_barcode,
         &_manufacturer,
-        &_brand {
+        &_brand { // Добавлено _brand для применения стилей
             text-align: left;
             font-size: 12px;
             color: $black;
-            font-weight: 600;
+            font-weight: 600; // Установите жирность
         }
 
         &_price {
-            font-size: 16px;
-            font-weight: 600;
-            color: $black;
-            white-space: nowrap;  // Предотвращает перенос текста
+            margin-top: 5px; // Убедитесь, что отступ сверху есть
+            font-size: 16px; // Уменьшите размер шрифта для цены
+            font-weight: 600; // Установите жирность
         }
 
         &_details {
             text-align: left;
-            margin: 10px 0;
+            margin: 10px 0; // Установите равные отступы между элементами
             font-size: 12px;
             color: $grey;
         }
@@ -77,42 +76,12 @@
 
     .item_price_button_container {
         display: flex;
-        justify-content: flex-start; /* Выровнять элементы по левому краю */
-        align-items: center; /* Вертикальное выравнивание */
-        margin-top: 10px;
-        gap: 10px; /* Добавим промежуток между ценой и кнопкой */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
     }
 
     .spacer {
         margin: 20px 0;
     }
-    
-    .item_details {
-        margin-bottom: 5px; /* Фиксированный отступ между элементами (штрихкод, производитель, бренд) */
-    }
-
-    .button {
-        background-color: #ffc85e;
-        border-radius: 50%;
-        padding: 0;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 5px 10px;
-        margin: 0 5px;
-        transition: all 0.3s ease-in-out;
-        border: none; /* Добавлено */
-        &:hover {
-          background-color: rgba(255, 134, 135, 1);
-        }
-        @media (min-width: 768px) {
-            padding: 10px 20px; /* Увеличиваем padding на больших экранах */
-            font-size: 24px;     /* Увеличиваем размер шрифта */
-          }
-      }
-};
-
-
-
-
+}

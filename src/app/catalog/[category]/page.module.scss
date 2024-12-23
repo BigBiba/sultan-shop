@@ -1,7 +1,58 @@
-@use "../../vars.scss" as vars;
-
-.item_container {
+.catalogPageContainer {
     display: flex;
-        flex-wrap: wrap;
-}
+    flex-direction: column;
 
+    .filterContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .filterOption {
+        margin: 15px;
+        width: 120px;
+        height: 80px;
+        background-color: transparent;
+    }
+
+    .checkboxLabel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.3s;
+        border-radius: 4px;
+    }
+
+    .checkboxLabel:hover {
+        background-color: #e0e0e0;
+    }
+
+    .checkboxLabel span {
+        pointer-events: none;
+        font-size: 18px; /* Increased font size to 18px */
+        color: #888;
+        margin: 0;
+    }
+
+    .filterOption.selected .checkboxLabel span {
+        color: orange;
+        font-weight: 600;
+    }
+
+    .filterOption.selected {
+        background-color: transparent;
+    }
+
+    .itemsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+}
