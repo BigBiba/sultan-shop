@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Header from "@/components/Header/Header";
+import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs';
 import ProductCard from '@/components/ProductCard/productcard'; // Импортируем компонент ProductCard
 import { Footer } from "@/components/Footer/footer";
 import { useParams } from 'next/navigation';
-import { items } from '/products.js';
+import {items} from "@/public/data/items";
 
 export default function ProductPage() {
   const params = useParams();
@@ -21,7 +22,8 @@ export default function ProductPage() {
   return (
     <div>
       <Header />
-      <ProductCard item={item} productUrl={`${process.env.NEXT_PUBLIC_BASE_URL}/product/${itemId}`} /> {/* Передаем объект item в компонент ProductCard */}
+      <Breadcrumbs productName={item.nameRu} categories={item.categories}/> 
+      <ProductCard item={item} productUrl={`${process.env.NEXT_PUBLIC_BASE_URL}/product/${itemId}`} /> 
       <Footer />
     </div>
   );

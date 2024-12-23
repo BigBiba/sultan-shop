@@ -1,4 +1,4 @@
-import { items } from '/products.js';
+import { items } from "@/public/data/items";
 import Image from 'next/image'; // Импорт компонент Image из next/image
 import './style.scss';
 import CartLogo from "@/public/icons/minicart.svg"
@@ -23,8 +23,8 @@ export default function PromItems() {
               <div className="label">Популярное</div>
               <div className="item-ml">{item.ml} мл</div>
               <text href={`/product-card/${item.id}`} className="item-name">
-                <strong>{item.name.split(' ')[0]}</strong>
-                {item.name}
+                <strong>{item.nameRu.split(' ')[0]}</strong>
+                {item.nameRu}
               </text>
               <div className="item-details">
                 Штрихкод: <span className="item-barcode">{item.barcode}</span>

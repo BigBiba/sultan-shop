@@ -1,12 +1,12 @@
 @use "../../app/vars.scss" as vars;
-
 .item-container {
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .link {
   text-decoration: none;
+  display: flex; /* Added for equal height items */
 
   .item {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -19,8 +19,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 300px; // Минимальная высота статьи
-  
+    min-height: 300px;
+        
+    //  removed min-height, we make use of flex-grow
     &-container {
       display: flex;
       flex-wrap: wrap;
@@ -41,6 +42,7 @@
     img {
       width: 100%;
       height: auto;
+      flex-grow: 1;  /* Added to take up available vertical space */
     }
   
     &-name {
@@ -79,8 +81,8 @@
       font-size: 12px;
     }
   
-    footer {
-      margin-top: auto; // Прижимает футер вниз
+     footer {
+        margin-top: auto; /* Прижимает футер вниз */
     }
   }
   
@@ -88,11 +90,9 @@
     margin: 20px 0;
   }
 }
-
-
   
   /* Адаптивные медиа-запросы */
-@media (max-width: 768px) { /* Для планшетов и маленьких экранов */
+@media (max-width: 768px) {
   .item {
       max-width: 90%; /* Элементы занимают всю ширину контейнера */
       margin: 10px auto; /* Центрирование элемента */
@@ -103,16 +103,16 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1020px) { /* Для больших планшетов */
+@media (min-width: 769px) and (max-width: 1020px) {
   .item {
-      max-width: 45%; /* Два элемента в ряд */
+      max-width: 45%;
       margin: 10px;
   }
 }
 
-@media (min-width: 1024px) { /* Для десктопов */
+@media (min-width: 1024px) {
   .item {
-      max-width: 20%; /* Три элемента в ряд */
+      max-width: 20%;
       margin: 10px;
   }
 }

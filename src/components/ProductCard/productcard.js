@@ -37,7 +37,7 @@ const ProductCard = ({ item, productUrl }) => {
       </div>
       <div className={styles.description}>
         <p className={styles.stockText}>{stockText}</p>
-        <h3 className={styles.productName}>{item.name}</h3>
+        <h3 className={styles.productName}>{item.nameRu}</h3>
         <div className={styles.priceContainer}> {/* Контейнер для цены, количества и корзины */}
           <p className={styles.price}>{item.price}₸</p>
           <div className={styles.quantityButtons}>

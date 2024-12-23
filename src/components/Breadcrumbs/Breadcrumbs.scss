@@ -1,0 +1,33 @@
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 18px; /* Increased font size */
+    color: #888;
+  
+    li {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+    li:last-child {
+      margin-right: 0;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #888;
+    }
+  
+    a:hover {
+        text-decoration: underline;
+        color: #555;
+    }
+  
+    /* Crucially important:  Correctly targeting the separator */
+    li + li::before {
+      content: "|";
+      color: #888;
+      padding: 0 8px;  /* Adjust spacing as needed */
+    }
+  }
