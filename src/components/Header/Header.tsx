@@ -12,6 +12,8 @@ import * as m from "@/paraglide/messages.js"
 
 import styles from "./Header.module.scss"
 
+import { Link } from "react-router-dom";
+
 export default function Header({lang}: { lang: string}) {
     return (
         <header className={styles.header}>
@@ -41,7 +43,7 @@ export default function Header({lang}: { lang: string}) {
                         width={200} 
                         height={59}></Button>
                 <span></span>
-                <Basket></Basket>
+                <Link to={"/cart"}><Basket></Basket></Link>
             </div>
         </header>
     )

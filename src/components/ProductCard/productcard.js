@@ -7,6 +7,11 @@ import { Link } from 'next/link';
 import Image from 'next/image'; // Импорт компонент Image из next/image
 import styles from './ProductCard.module.scss'; // Обратите внимание на .module.scss
 
+//для корзины
+import React from 'react'
+import { addToCart } from '../Slices/CartSlice';
+import { useDispatch } from 'react-redux'; 
+
 const ProductCard = ({ item, productUrl }) => {
   const [quantity, setQuantity] = useState(1);
   const [isDescriptionOpen, setDescriptionOpen] = useState(false);
@@ -21,11 +26,13 @@ const ProductCard = ({ item, productUrl }) => {
   const decrementQuantity = () => setQuantity(Math.max(1, quantity - 1));
   const toggleDescription = () => setDescriptionOpen(!isDescriptionOpen);
 
-  const addToCart = () => {
-    if (item.ml > 0) {
-      alert(`Добавлено в корзину: ${quantity}`);
+  const dispatch = useDispatch();
+
+    const handleAddToCart = () => {
+        console.log("dispatching add to cart")
+        dispatch(addToCart(dataObj)); 
+        return;
     }
-  };
 
   const stockText = (item.ml > 0) ? <span style={{ color: 'green' }}>В наличии</span> : <span style={{ color: 'red' }}>Нет в наличии</span>;
 
@@ -45,7 +52,7 @@ const ProductCard = ({ item, productUrl }) => {
         <input type="number" value={quantity} readOnly className={styles.quantityInput} />
         <button className={styles.button} onClick={() => incrementQuantity()}>+</button>
           </div>
-          <Button className={styles.addToCartButton} text='В КОРЗИНУ' text_size={16} icon_src={CartLogo} icon_alt='' width={210} height={60} onClick={addToCart}/>
+          <Button className={styles.addToCartButton} text='В КОРЗИНУ' text_size={16} icon_src={CartLogo} icon_alt='' width={210} height={60} onClick={handleAddToCart}/>
         </div>
         <p> Производитель: <span className={styles.boldText}>{item.manufacturer}</span></p>
         <p> Бренд: <span className={styles.boldText}>{item.brand}</span></p>
