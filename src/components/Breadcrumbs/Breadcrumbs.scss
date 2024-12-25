@@ -1,33 +1,40 @@
 .breadcrumbs {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    font-size: 18px; /* Increased font size */
-    color: #888;
-  
-    li {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 18px; /* Увеличенный размер шрифта */
+  color: #888;
+
+  li {
       display: inline;
       margin-right: 10px;
-    }
-  
-    li:last-child {
+  }
+
+  li:last-child {
       margin-right: 0;
-    }
-  
-    a {
+  }
+
+  a {
       text-decoration: none;
       color: #888;
-    }
-  
-    a:hover {
-        text-decoration: underline;
-        color: #555;
-    }
-  
-    /* Crucially important:  Correctly targeting the separator */
-    li + li::before {
+  }
+
+  a:hover {
+      text-decoration: underline;
+      color: #555;
+  }
+
+  /* Важно: правильно нацеливаем на разделитель */
+  li + li::before {
       content: "|";
       color: #888;
-      padding: 0 8px;  /* Adjust spacing as needed */
-    }
+      padding: 0 8px; /* Настраивайте отступы по необходимости */
   }
+}
+
+/* Скрываем всю область с хлебными крошками на экранах шириной менее 768px */
+@media (max-width: 768px) {
+  .breadcrumbs {
+      display: none;
+  }
+}

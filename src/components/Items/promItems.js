@@ -10,7 +10,7 @@ export default function PromItems() {
     <div>
       <h2 style={{ textAlign: 'left', fontSize: '30px' }}><span style={{ color: '#FFBF00' }}>Акционные</span> товары</h2>
       <div className="item-container">
-      {items.map(item => (
+      {items.slice(0, 4).map(item => (
         <Link href={`/product-card/${item.id}`} className='link'>
             <article className="item" key={item.id}>
               <Image
